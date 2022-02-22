@@ -1,0 +1,8 @@
+@import "./reset.css";
+@import "./variables.css";
+
+/* page */
+@import "./home.css";
+
+/* compontent */
+@import "./navbar.css";
