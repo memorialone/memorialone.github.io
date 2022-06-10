@@ -1,0 +1,30 @@
+.App {
+  background: url("../images/main.jpg") center center / cover no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.App.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10vw;
+  color: #fff;
+}
+
+.main-textbox h1 {
+  font-family: var(--noto5);
+  font-size: 3.2rem;
+  line-height: 1.4em;
+}
+.main-textbox p {
+  margin: 2rem 0rem;
+}
+.main button {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  width: 300px;
+  color: #fff;
+  font-family: var(--noto4);
+  background-color: var(--blue);
+}

@@ -1,0 +1,20 @@
+.counter-card {
+  padding: 0rem 3rem;
+}
+
+.counter-card h3 {
+  color: rgb(10, 128, 128);
+  font-family: var(--noto5);
+  font-size: 2.7rem;
+}
+.counter-card h4 {
+  margin: 20px 0px;
+  font-family: var(--noto5);
+  font-size: 1.4rem;
+}
+.counter-card p {
+  margin: 20px 0px;
+  display: inline-block;
+  font-family: var(--noto3);
+  font-size: 0.9rem;
+}

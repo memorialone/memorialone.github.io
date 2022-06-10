@@ -1,0 +1,29 @@
+:root {
+  --score3: 'S-CoreDream-3Light';
+  --score4: 'S-CoreDream-4Regular';
+  --score5: 'S-CoreDream-5Medium';
+  --yellow: #fcbe40;
+  --blue: #2d90e6;
+  --main-color: #2d90e6;
+
+  --bg-color: #f2f2f2;
+  --bg-gray-color: #f2f2f2;
+  --bg-white-unname: #ffffff;
+  --disable-color: #b1aea2;
+  --admin-header-color: #00acc1;
+  --maker-new-background-color: #f9fafb;
+
+  --noto2: 'Noto Sans KR-Light';
+  --noto3: 'Noto Sans KR-Regular';
+  --noto4: 'Noto Sans KR-Medium';
+  --noto5: 'Noto Sans KR-Bold';
+
+  --expand-info-title-color: #3293e6;
+  --expand-info-text-color: #5d5d5d;
+
+  --register-color: #2d90e6;
+
+  --progress-color: #8aaee3;
+}
+
+/* #edb035; */
