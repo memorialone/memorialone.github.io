@@ -6,19 +6,19 @@
 
 .App.main {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: initial;
+  align-items: center;
+  justify-content: space-between;
   padding: 0px 10vw;
   color: #fff;
 }
 
 .main-textbox h1 {
   font-family: var(--noto5);
-  font-size: 3.2rem;
-  line-height: 1.4em;
+  font-size: 2rem;
 }
 .main-textbox p {
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 .main button {
   padding: 1rem 2rem;

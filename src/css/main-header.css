@@ -1,18 +1,23 @@
 .main-header {
   background-color: none;
-  height: 8vh;
+  height: 4vh;
   position: fixed;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   padding: 20px 20px;
   z-index: 999;
   -webkit-transition: background-color 0.3s, -webkit-transform 2s;
   transition: background-color 0.3s;
 }
 
-.main-header .logo {
+.main-header .logo-text {
+  font-size: 1.4rem;
+  font-family: var(--noto5);
   height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 1.4rem;
 }
 
 .main-header .defalut-navbar ul {
@@ -23,16 +28,16 @@
   padding-right: 20px;
 }
 .main-header .defalut-navbar ul li {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0px 10px;
-  font-family: var(--noto5);
+  font-family: var(--noto4);
 }
-.main-header .defalut-navbar .black-text {
+.black-text {
   color: #333 !important;
   transition: color 0.3s ease-in-out;
 }
-.main-header .defalut-navbar .white-text {
-  color: #fff;
+.white-text {
+  color: #fff !important;
   transition: color 0.3s ease-in-out;
 }
 

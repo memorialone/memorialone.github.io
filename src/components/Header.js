@@ -23,8 +23,11 @@ function Header() {
 
   return (
     <header className={(isScroll ? "isScroll" : " ") + " main-header"}>
-      <a href="/">
-        <img className="logo" src={logo} alt="logo" />
+      <a
+        className={(isScroll ? "black-text" : "white-text") + " logo-text"}
+        href="/"
+      >
+        Memorial One
       </a>
 
       <Navbar isScroll={isScroll} />

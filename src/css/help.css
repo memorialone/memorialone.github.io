@@ -1,0 +1,38 @@
+.help-img-text__wrap {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem 0rem;
+}
+
+.help-img__wrap {
+  width: 400px;
+}
+.help-img__wrap img {
+  width: 100%;
+}
+.help-info__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.help-info-title__wrap {
+  margin-bottom: 4rem;
+}
+.help-info__wrap h2 {
+  font-size: 2rem;
+  font-family: var(--noto5);
+  padding: 0rem 0rem 1rem 0rem;
+}
+.help-info__wrap span {
+  font-size: 1.5rem;
+  font-family: var(--noto4);
+  color: #a0a0a0;
+}
+
+.help-info-descript__wrap {
+  padding: 1rem 0rem;
+  line-height: 1.4em;
+  font-size: 1.1rem;
+  font-family: var(--noto5);
+  color: #646464;
+}
