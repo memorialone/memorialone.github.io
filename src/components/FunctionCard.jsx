@@ -1,17 +1,20 @@
 import React from "react";
-import { FaHome } from "react-icons/fa";
 
-const FunctionCard = () => {
+import FunctionIcon from "./FunctionIcon";
+
+const FunctionCard = ({ title, desc_1, desc_2, desc_3 }) => {
   return (
-    <div>
+    <div className="function-card">
       <div>
-        <FaHome style="color: #fff" />
+        <FunctionIcon title={title} />
       </div>
-      <div>
-        <h6>zzz</h6>
-        <p></p>
-        <p></p>
-        <p></p>
+      <div className="function-card-text__wraps">
+        <h6>
+          <strong>{title}</strong>
+        </h6>
+        <p>{desc_1}</p>
+        <p>{desc_2}</p>
+        <p>{desc_3}</p>
       </div>
     </div>
   );

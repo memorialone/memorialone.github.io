@@ -11,6 +11,7 @@ import Mouse from "../components/Mouse";
 import ThumCard from "../components/ThumCard";
 import HelpSection from "../components/HelpSection";
 import FunctionCard from "../components/FunctionCard";
+import MainPhotoCard from "../components/MainPhotoCard";
 
 function App() {
   const template = {
@@ -59,6 +60,33 @@ function App() {
       engTitle: "Watch and download a video",
       descript_1: "문자(SMS)로 전송된 링크에 접속하면",
       descript_2: "영상을 바로 볼 수 있고 다운로드할 수 있습니다",
+    },
+  };
+
+  const photoCard = {
+    cnemo: {
+      bgImg: require("../images/footage/1.jpg"),
+      title: "Cnemo Story",
+      desc_1: "시네모는 Cinema Moment의 줄임말로서",
+      desc_2: "영화 같은 순간을 위해 설립되었습니다.",
+      desc_3: "다큐멘터리스트, 디자이너, 개발자로 구성되어",
+      desc_4: "당신의 역사에서 영화적 순간을 포착합니다.",
+    },
+    memorialone: {
+      bgImg: require("../images/footage/2.jpg"),
+      title: "MemorialOne Story",
+      desc_1: "시네모가 제공하는 메모리얼원 서비스는",
+      desc_2: "소중한 기억을 간직할 수 있도록",
+      desc_3: "영화적 순간을 담은 당신의 사진으로",
+      desc_4: "아름답고 따뜻한 영상을 만들고 있습니다",
+    },
+    vision: {
+      bgImg: require("../images/footage/3.jpg"),
+      title: "Cnemo Vision",
+      desc_1: "영화적 순간을 만드는 콘텐츠로",
+      desc_2: "새로운 장례 문화를 이끕니다",
+      desc_3: "추모영상, 다큐멘터리, VR, AR 등으로",
+      desc_4: "예술과 기술을 결합한 콘텐츠를 만듭니다",
     },
   };
 
@@ -153,13 +181,111 @@ function App() {
         <p>모든 이들이 자신만의 역사를 만들며 살아간다</p>
         <p>여기 또 하나의 역사를 기억한다</p>
       </section>
-      <section>
-        <div></div>
-        <div>
-          <FunctionCard />
+      <section className="defalut-section function">
+        <div className="section-func-text__wraps">
+          <h2>메모리얼원</h2>
+          <h4>당신을 위한 기능</h4>
+        </div>
+        <div className="function-card__wraps">
+          <FunctionCard
+            title="간단한 인터페이스"
+            desc_1="자막수정과 사진 업로드를"
+            desc_2="쉽고 간편하게 할 수 있는"
+            desc_3="인터페이스를 갖추고 있습니다"
+          />
+          <FunctionCard
+            title="따뜻한 위로 선사"
+            desc_1="고인과 함께 한 순간으로 엮인"
+            desc_2="따뜻하고 아름다운 영상은"
+            desc_3="세심한 위로가 될 것입니다"
+          />
+          <FunctionCard
+            title="관리자 페이지 제공"
+            desc_1="업체별 관리자 페이지를 통해"
+            desc_2="주문자 정보와 제작 진행 상황을"
+            desc_3="바로 파악할 수 있습니다"
+          />
+          <FunctionCard
+            title="추가 기능 피드백"
+            desc_1="추가 기능을 요청하시면"
+            desc_2="그 의견을 반영하여"
+            desc_3="서비스를 개선하고 있습니다"
+          />
         </div>
       </section>
-      <section className="defalut-section counter">
+      <section className="main-photo-cards__wraps">
+        <MainPhotoCard
+          bgImg={photoCard.cnemo.bgImg}
+          title={photoCard.cnemo.title}
+          desc_1={photoCard.cnemo.desc_1}
+          desc_2={photoCard.cnemo.desc_2}
+          desc_3={photoCard.cnemo.desc_3}
+          desc_4={photoCard.cnemo.desc_4}
+        />
+        <MainPhotoCard
+          bgImg={photoCard.memorialone.bgImg}
+          title={photoCard.memorialone.title}
+          desc_1={photoCard.memorialone.desc_1}
+          desc_2={photoCard.memorialone.desc_2}
+          desc_3={photoCard.memorialone.desc_3}
+          desc_4={photoCard.memorialone.desc_4}
+        />
+        <MainPhotoCard
+          bgImg={photoCard.vision.bgImg}
+          title={photoCard.vision.title}
+          desc_1={photoCard.vision.desc_1}
+          desc_2={photoCard.vision.desc_2}
+          desc_3={photoCard.vision.desc_3}
+          desc_4={photoCard.vision.desc_4}
+        />
+      </section>
+      <section className="defalut-section logo-imgs__wraps">
+        <div className="logo-img__wraps">
+          <img
+            src={require("../images/logo/music_copylight.png")}
+            alt="copylight-img"
+            width="300px"
+          />
+        </div>
+        <div className="logo-img__wraps">
+          <img
+            src={require("../images/logo/music_player.jpg")}
+            alt="music_player-img"
+            width="300px"
+          />
+        </div>
+        <div className="logo-img__wraps">
+          <img
+            src={require("../images/logo/adobe.png")}
+            alt="adobe-img"
+            width="200px"
+          />
+        </div>
+        <div className="logo-img__wraps">
+          <img
+            src={require("../images/logo/vimeo.png")}
+            alt="vimeo-img"
+            width="150px"
+          />
+        </div>
+      </section>
+      <section className="defalut-section collabo">
+        <div>
+          <h4>협력과 제휴를 통해 함께 성장하며 </h4>
+          <h4>새로운 문화를 형성하고자 합니다</h4>
+        </div>
+        <div>
+          <hr width="80px"></hr>
+        </div>
+        <div>
+          <p>Through cooperation and partnership,</p>
+          <p>we want to grow together and lead a new culture.</p>
+        </div>
+        <div>
+          <button>제휴 문의하기</button>
+        </div>
+      </section>
+      {/* <section className="defalut-section counter">
         <CounterCard
           number="1000+"
           title="Total Projects"
@@ -175,7 +301,7 @@ function App() {
           title="Anything"
           subText="Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus"
         />
-      </section>
+      </section> */}
       <Footer />
     </>
   );

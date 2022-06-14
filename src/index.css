@@ -7,6 +7,8 @@
 @import "./css/couter-card.css";
 @import "./css/mouse.css";
 @import "./css/help.css";
+@import "./css/function-card.css";
+@import "./css/main-photo-card.css";
 
 /* fonts */
 @import "./css/font.css";
@@ -39,10 +41,29 @@ code {
 .defalut-section.first {
   background-color: black;
 }
+.defalut-section.function {
+  flex-direction: initial;
+  padding: 4rem 2rem;
+  justify-content: space-around;
+}
+.section-func-text__wraps {
+  width: 300px;
+}
+.section-func-text__wraps h2 {
+  font-size: 3rem;
+  font-family: var(--noto5);
+  margin-bottom: 1.4rem;
+}
+.section-func-text__wraps h4 {
+  font-size: 2rem;
+  font-family: var(--noto5);
+  color: #7f7f7f;
+}
+
 .defalut-section.star-back {
   background-attachment: fixed;
   background-image: url("./images/star.jpg");
-  height: 25vh;
+  height: 35vh;
   color: #fff;
   justify-content: center;
   align-items: center;
@@ -151,6 +172,59 @@ code {
   justify-content: center;
 }
 
+.defalut-section.logo-imgs__wraps {
+  flex-direction: initial;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.logo-img__wraps {
+  width: auto;
+  padding: 1.4rem;
+}
+
+.defalut-section.logo-imgs__wraps img {
+  height: auto;
+}
+
+.defalut-section.collabo {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./images/collabo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50vh;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.defalut-section.collabo h4 {
+  font-family: var(--noto5);
+  font-size: 1.5rem;
+  line-height: 1.8em;
+}
+.defalut-section.collabo hr {
+  margin: 1.5rem;
+}
+.defalut-section.collabo p {
+  font-family: var(--noto3);
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.8em;
+}
+.defalut-section.collabo button {
+  font-family: var(--noto3);
+  font-size: 0.8rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  padding: 0.8rem 1rem;
+  background-color: #fff;
+  color: #333;
+}
+.defalut-section.collabo button:hover {
+  background-color: #dfdfdf;
+  color: #333;
+}
 .footer {
   background-color: rgb(26, 26, 26);
   color: #999;

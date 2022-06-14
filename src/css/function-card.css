@@ -1,0 +1,21 @@
+.function-card__wraps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 500px;
+  padding: 0rem 4rem 0rem 0rem;
+}
+.function-card {
+  padding-bottom: 4rem;
+}
+
+.function-card-text__wraps h6 {
+  font-family: var(--noto5);
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+}
+.function-card-text__wraps p {
+  font-family: var(--noto2);
+  font-size: 0.9rem;
+  line-height: 1.5em;
+}
