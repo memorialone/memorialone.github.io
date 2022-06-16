@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 import Navbar from "./Navbar";
 
@@ -23,12 +24,12 @@ function Header() {
 
   return (
     <header className={(isScroll ? "isScroll" : " ") + " main-header"}>
-      <a
+      <Link
         className={(isScroll ? "black-text" : "white-text") + " logo-text"}
-        href="/"
+        to="/"
       >
         Memorial One
-      </a>
+      </Link>
 
       <Navbar isScroll={isScroll} />
     </header>

@@ -1,5 +1,7 @@
 /* pages style */
 @import "./containers/App.css";
+@import "./css/video-page.css";
+@import "./css/video-detail-page.css";
 
 /* components style */
 @import "./css/main-header.css";
@@ -230,6 +232,10 @@ code {
   color: #999;
   text-align: center;
   padding: 2rem 0rem;
+
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .footer p,
 .footer a {
